@@ -1,0 +1,31 @@
+
+EDA SUMMARY REPORT
+==================
+INTRUSION DATASET:
+- Rows: 692,703
+- Columns: 79
+- Missing values: 1008
+- Attack types: 6
+- Class distribution:
+ Label
+BENIGN              440031
+DoS Hulk            231073
+DoS GoldenEye        10293
+DoS slowloris         5796
+DoS Slowhttptest      5499
+Heartbleed              11
+
+PHISHING DATASET:
+- Rows: 235,795
+- Columns: 56
+- Missing values: 0
+- Classes: 2
+- Class distribution:
+label
+1    134850
+0    100945
+
+FIGURES GENERATED:
+1. class_distribution.png
+2. correlation_heatmap.png
+3. feature_distributions.png
