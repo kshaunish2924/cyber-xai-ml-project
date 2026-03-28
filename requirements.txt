@@ -1,0 +1,103 @@
+# 🛡️ Explainable AI for Cyber Threat Detection
+
+> A unified ML framework for detecting Network Intrusions and Phishing attacks,
+> with SHAP-based explainability for transparent, trustworthy predictions.
+
+---
+
+## 📌 Project Overview
+
+Cybersecurity systems powered by Machine Learning often act as "black boxes" —
+they detect threats but can't explain *why*. This project solves that problem
+by combining an ensemble ML model with SHAP (SHapley Additive exPlanations)
+to make every prediction interpretable.
+
+**Threats Detected:**
+- 🔴 Network Intrusions (using CICIDS 2017 dataset)
+- 🟠 Phishing Websites (using PhiUSIIL dataset)
+
+---
+
+## 💡 Novelty
+
+- ✅ Dual-threat detection in a single unified pipeline
+- ✅ SHAP explainability on ensemble model (RF + XGBoost)
+- ✅ Feature-level explanation for every prediction
+- ✅ Comparison against 4 baseline models
+
+---
+
+## 🗂️ Project Structure
+```
+cyber-xai-ml-project/
+├── data/
+│   ├── raw/              # Original datasets
+│   └── processed/        # Cleaned & encoded data
+├── notebooks/
+│   ├── 01_EDA.ipynb
+│   ├── 02_Preprocessing.ipynb
+│   ├── 03_Model_Training.ipynb
+│   ├── 04_Evaluation.ipynb
+│   └── 05_XAI_SHAP.ipynb
+├── models/
+│   └── saved_models/     # Trained model files
+├── report/               # Final research article PDF
+├── presentation/         # Slides
+├── src/
+│   ├── preprocess.py
+│   ├── train.py
+│   └── explain.py
+└── requirements.txt
+```
+
+---
+
+## 🧰 Tech Stack
+
+| Tool | Purpose |
+|------|---------|
+| Python 3.10+ | Core language |
+| Scikit-learn | Baseline models |
+| XGBoost | Ensemble model |
+| SHAP | Explainability |
+| Pandas / NumPy | Data processing |
+| Matplotlib / Seaborn | Visualization |
+| Imbalanced-learn | SMOTE oversampling |
+| Jupyter Notebook | Development environment |
+
+---
+
+## 📊 Datasets
+
+| Dataset | Threat Type | Source |
+|--------|------------|--------|
+| CICIDS 2017 | Network Intrusion | [Canadian Institute for Cybersecurity](https://www.unb.ca/cic/datasets/ids-2017.html) |
+| PhiUSIIL | Phishing Websites | [UCI ML Repository](https://archive.ics.uci.edu) |
+
+---
+
+## 🚀 How to Run
+```bash
+# 1. Clone the repo
+git clone https://github.com/kshaunish2924/cyber-xai-ml-project.git
+cd cyber-xai-ml-project
+
+# 2. Install dependencies
+pip install -r requirements.txt
+
+# 3. Open Jupyter
+jupyter notebook
+```
+
+---
+
+## 👨‍💻 Author
+
+Kshaunish Santosh Naik
+Machine Learning Lab — Manipal University Jaipur
+naikkshaunish@gmail.com
+
+---
+
+## 📄 License
+MIT License 
