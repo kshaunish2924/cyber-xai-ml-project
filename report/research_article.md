@@ -1,5 +1,30 @@
 # An Explainable AI Framework for Network Intrusion and 
 # Phishing Detection Using Ensemble Learning and SHAP Analysis
+
+## Abstract
+
+Cybersecurity threats including network intrusions and phishing attacks 
+pose significant risks to modern digital infrastructure. Existing 
+machine learning-based detection systems, while accurate, operate as 
+black boxes lacking transparency and interpretability. Furthermore, 
+intrusion and phishing detection are typically addressed independently, 
+increasing operational complexity. This paper proposes a unified 
+Explainable AI (XAI) framework combining ensemble learning with SHAP 
+(SHapley Additive exPlanations) analysis for simultaneous network 
+intrusion and phishing detection. The proposed RF+XGBoost soft voting 
+ensemble was evaluated on the CICIDS 2017 intrusion detection dataset 
+(692,703 samples) and PhiUSIIL phishing dataset (235,795 samples), 
+achieving F1-scores of 99.95% and 100% respectively. SHAP TreeExplainer 
+was applied to generate global feature importance rankings and local 
+single-prediction explanations through summary, beeswarm, and waterfall 
+visualizations. The proposed framework outperforms baseline models while 
+providing unprecedented interpretability, bridging the gap between 
+high-accuracy ML detection and real-world security analyst requirements.
+
+**Keywords:** Explainable AI, SHAP, Network Intrusion Detection, 
+Phishing Detection, Ensemble Learning, Random Forest, XGBoost, 
+Cybersecurity, Machine Learning
+
 ## 1. Introduction
 
 The rapid proliferation of internet-connected systems has led to an 
@@ -203,29 +228,6 @@ Several directions exist for extending this work:
 5. **Adversarial robustness** — Evaluating model performance against 
    adversarial attacks designed to evade detection.
 
-## Abstract
-
-Cybersecurity threats including network intrusions and phishing attacks 
-pose significant risks to modern digital infrastructure. Existing 
-machine learning-based detection systems, while accurate, operate as 
-black boxes lacking transparency and interpretability. Furthermore, 
-intrusion and phishing detection are typically addressed independently, 
-increasing operational complexity. This paper proposes a unified 
-Explainable AI (XAI) framework combining ensemble learning with SHAP 
-(SHapley Additive exPlanations) analysis for simultaneous network 
-intrusion and phishing detection. The proposed RF+XGBoost soft voting 
-ensemble was evaluated on the CICIDS 2017 intrusion detection dataset 
-(692,703 samples) and PhiUSIIL phishing dataset (235,795 samples), 
-achieving F1-scores of 99.95% and 100% respectively. SHAP TreeExplainer 
-was applied to generate global feature importance rankings and local 
-single-prediction explanations through summary, beeswarm, and waterfall 
-visualizations. The proposed framework outperforms baseline models while 
-providing unprecedented interpretability, bridging the gap between 
-high-accuracy ML detection and real-world security analyst requirements.
-
-**Keywords:** Explainable AI, SHAP, Network Intrusion Detection, 
-Phishing Detection, Ensemble Learning, Random Forest, XGBoost, 
-Cybersecurity, Machine Learning
 
 ## References
 
