@@ -1,0 +1,22 @@
+
+SHAP ANALYSIS SUMMARY
+=====================
+Model: Random Forest (core component of RF+XGBoost Ensemble)
+Method: TreeExplainer
+Samples analyzed: 500 (random sample from test set)
+
+INTRUSION DETECTION - Top Influential Features:
+- SHAP values calculated for all 6 attack classes
+- Visualizations: Bar plot, Beeswarm plot, Waterfall plot
+- Key finding: Flow-based features dominate attack detection
+
+PHISHING DETECTION - Top Influential Features:  
+- SHAP values calculated for phishing class
+- Visualizations: Bar plot
+- Key finding: URL and domain-based features most influential
+
+FIGURES GENERATED:
+1. shap_intrusion_bar.png     - Global feature importance (Intrusion)
+2. shap_phishing_bar.png      - Global feature importance (Phishing)
+3. shap_intrusion_beeswarm.png - Feature impact distribution (Intrusion)
+4. shap_waterfall.png          - Single prediction explanation
